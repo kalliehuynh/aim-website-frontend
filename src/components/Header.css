@@ -3,8 +3,31 @@
     color: white;
     display: flex;
     justify-content: center;
-}
+    align-items: center;
+ }
 
 .h1 {
     border: none;
+}
+
+.aim-logo {
+    width: 4rem;
+    height: 4rem;
+
+}
+
+.titles-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 1vh 0;
+}
+
+.titles-wrapper h1 {
+    margin: 0;
+}
+
+
+.titles-wrapper p {
+    font-size: 0.5rem;
+    margin: 0;
 }
