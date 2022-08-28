@@ -9,7 +9,7 @@
     margin: 0;
     margin-top: 25px;
     width: 80%;
-    min-width: 290px;
+    min-width: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,6 +23,8 @@
     object-fit: cover;
     width: 200px;
     height: 250px;
+    margin-left: 6%;
+    margin-top: 6%;
 }
 
 .person-bio-wrapper {
