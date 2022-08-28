@@ -1,0 +1,38 @@
+.person {
+    list-style: none;
+    background-color: rgb(250, 219, 215);
+    padding: 3% 4%;
+}
+
+.team-person-list {
+    background-color: rgb(250, 219, 215);
+    margin: 0;
+    margin-top: 25px;
+    width: 80%;
+    min-width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.person-image {
+    background-color: white;
+    padding: 9px;
+    object-fit: cover;
+    width: 200px;
+    height: 250px;
+}
+
+.person-bio-wrapper {
+    flex: 1 1 50%;
+    padding: 2% 6%;
+}
+
+.team-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

@@ -1,0 +1,30 @@
+.navbar {
+    display: flex;
+}
+
+.nav-link {
+    display: flex;
+    flex: 1 1 50%;
+    justify-content: center;
+    border-left: 2px solid rgb(148, 159, 130);
+    border-top: 2px solid rgb(148, 159, 130);
+    border-bottom: 2px solid rgb(148, 159, 130);
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 200;
+}
+
+.nav-link:hover, .nav-link:focus {
+    background-color: rgb(255, 216, 214);
+}
+
+#about {
+    border-left: 0;
+}
+
+@media (max-width: 1000px) {
+    
+  
+
+}
