@@ -18,6 +18,14 @@
     margin: 3% 2% 0 2%;
     background-color: rgb(250, 219, 215);
     padding: 0 3% 3% 3%;
-    width: 18rem;
+    width: 15rem;
     border-radius: 5px;
+}
+
+.advocacy-curriculum-box li {
+    margin-bottom: 0.7rem;
+}
+
+.about-desc {
+    margin-bottom: 2rem;
 }

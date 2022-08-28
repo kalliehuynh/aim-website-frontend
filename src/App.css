@@ -39,6 +39,10 @@ a {
   font-weight: bold;
 }
 
+a:hover {
+  color: rgb(95, 117, 84);
+}
+
 @media (max-width: 1000px) {
     .app-wrapper {
       margin: 0;
