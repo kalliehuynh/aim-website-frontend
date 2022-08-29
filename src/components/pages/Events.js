@@ -58,6 +58,40 @@ const UpcomingEvent = ({ event, viewingEvent, setViewingEvent }) => {
 
 }
 
+const PastPosters = () => {
+    const pastPosters = [
+        {
+            'src': `/past_posters/medical_specialties.png`,
+            'alt': "'Medical Specialties Serving Patients Experiencing Disability: A Career Panel' poster"
+        },
+        {
+            'src': `/past_posters/disability_affirming_healthcare.png`, 
+            'alt': "'Moving Towards Disability-Affirming Healthcare Systems: Let's Talk Ableism' poster"
+        },
+        {
+            'src': `/past_posters/sex_and_disability.png`,
+            'alt': "'Talking Sex and Disability with Andrew Gurza' poster"
+        },
+
+        {
+            'src': `/past_posters/stories_from_disability.png`,
+            'alt': "'Stories from Disability Knowledge Holders: Heather Kuttai' poster"
+        }
+    ]
+    return (
+        <div className="past-posters">
+            <h1 className="header">Past Posters</h1>
+            <div className="past-posters-wrapper">
+                {pastPosters.map(poster => {
+                    const { src, alt } = poster
+                    return <img src={src} alt={alt} className='past-poster'/>
+                })}
+            </div>
+        </div>
+    )
+}
+
+
 const Events = () => {
     const [viewingEvent, setViewingEvent] = useState(null)
     const [events, setEvents] = useState([])
@@ -82,11 +116,14 @@ const Events = () => {
     if (events.length === 0) {
         return (
             <DocumentTitle title='Events'>
-            <div className="upcoming-events main" >
-                <h1 className="header">Upcoming Events</h1>
-                <p>We are still planning events... check back later!</p>
-                
-            </div>
+                <div className="main">
+                    <div className="upcoming-events" >
+                        <h1 className="header">Upcoming Events</h1>
+                        <p>We are still planning events... check back later!</p>
+                    </div>
+                    <PastPosters />
+                </div>
+            
         </DocumentTitle>
         )
     }
@@ -100,20 +137,24 @@ const Events = () => {
         
         return (
             <DocumentTitle title={`AIM events - ${eventName}`}>
-                <div className="upcoming-events main" >
-                    <h1 className="header">Upcoming Events</h1>
-                    <EventInfo
-                        eventName={eventName}
-                        startDate={convertDate(startDate)}
-                        endDate={convertDate(endDate)}
-                        startTime={convertTimeString(startTime)}
-                        endTime={convertTimeString(endTime)}
-                        location={location}
-                        desc={desc}
-                        setViewingEvent={setViewingEvent}
-                    />
-                    
+                <div className="main">
+                    <div className="upcoming-events" >
+                        <h1 className="header">Upcoming Events</h1>
+                        <EventInfo
+                            eventName={eventName}
+                            startDate={convertDate(startDate)}
+                            endDate={convertDate(endDate)}
+                            startTime={convertTimeString(startTime)}
+                            endTime={convertTimeString(endTime)}
+                            location={location}
+                            desc={desc}
+                            setViewingEvent={setViewingEvent}
+                        />
+                    </div>
+                    <PastPosters />    
                 </div>
+                
+                
             </DocumentTitle>
             
         )
@@ -121,15 +162,18 @@ const Events = () => {
     console.log('events', events)
     return (
         <DocumentTitle title='Events'>
-            <div className="upcoming-events main" >
-                <h1 className="header">Upcoming Events</h1>
-                <ul className="upcoming-events-list">
-                    {events.map(e => 
-                        <UpcomingEvent event={e} setViewingEvent={setViewingEvent} />
-                    )}
-                </ul>
-                
+            <div className="main">
+                <div className="upcoming-events" >
+                    <h1 className="header">Upcoming Events</h1>
+                    <ul className="upcoming-events-list">
+                        {events.map(e => 
+                            <UpcomingEvent event={e} setViewingEvent={setViewingEvent} />
+                        )}
+                    </ul>
+                </div>
             </div>
+            
+            <PastPosters />
         </DocumentTitle>
         
     )

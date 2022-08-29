@@ -64,18 +64,34 @@ const Team = () => {
             'contact': 'huean@ualberta.ca',
             'img': 'an_nguyen.jpg',
             'alt_text': 'Portrait pisture of An'
-        }
+        },
     ]
-
     return (
         <DocumentTitle title="Team">
             <div className="main team">
                 <h1 className="header">Team</h1>
+                <div className="recruiting">
+                    <p>We are currently recruiting the following roles for this Fall 2022!</p>
+                    <ul>
+                        <li><strong>VP Events</strong></li>
+                        <li><strong>VP Curriculum</strong></li>
+                        <li><strong>VP Advocacy/EDI</strong></li>
+                    </ul>
+                </div>
                 <div className="team-content-wrapper">
                     <ul className="team-person-list">
                         {people.map(p => <Person person={p} />)}
                     </ul>       
                 </div>
+                <div className="team-history">
+                     <p>
+                        The Accessibility and Inclusivity in Medicine (AIM) Club is a student initiative 
+                        started in 2020 by Surina Grover and Vienna Buchholz (c2024 medical students) at the 
+                        University of Alberta’s Faculty of Medicine and Dentistry, located on Treaty 6 Territory. 
+                    </p>
+                    <img src="/images/surina_grover.png" alt='Surina Grover, in front of a university building'  className="team-history-img"/>
+                </div>
+                
                 
             </div>
         </DocumentTitle>

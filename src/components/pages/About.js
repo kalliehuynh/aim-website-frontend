@@ -8,29 +8,27 @@ const About = () => {
                 <h1 className='header' tabIndex={0}>About Us</h1>
                 <div className="about-desc">
                     <p>
-                        Located on Treaty 6 Territory, the <strong>Accessibility and Inclusivity in Medicine (AIM) Club</strong> is a student initiative started in 2021-2022 by <b>Surina Grover</b> and <b>Vienna Bucholz</b> at the University of Alberta’s Faculty of Medicine and Dentistry. 
+                        We are medical students passionate about learning from and advocating with/for patients and students identifying with disability, Deafness, or Neurodivergence.
                     </p>
-                    <p>
-                        We are medical students who are passionate about learning from disability communities and educating medical students in order to better serve our future patients identifying with disability, Deaf communities, Neurodivergence, and beyond. 
-                    </p>
+                </div>
+                <div className='old-logo'>
+                    <p>You may recognize us by our old logo:</p>
+                    <img src={`${process.env.PUBLIC_URL}/images/AIM Logo_Nov_2020.png`} alt="The AIM club's old logo from 2020" className='old-logo-img'/>
                 </div>
                 <h1 className='header' tabIndex={0}>Purpose</h1>
                 <div className="about-desc">
                     <p>
                         The purpose of the AIM Club is to <strong>increase medical students’ awareness, empathy, and knowledge for those who experience disability, are neurodiverse, are Deaf, and more</strong>. 
                     </p>
-                    <p>
-                    We do this through club events where we bring in disability knowledge holders and host workshops, we also work on curriculum with UME staff to increase disability representation, and we will be sitting on the 2022-2023 year’s Social Accountability Council (SAC) with the MD Program at the University of Alberta. 
-                    </p>
                 </div>
                 <h1 className='header' tabIndex={0}>Initiatives</h1>
                 <div className="about-desc">
-                    <p>
-                        This club is focused on clinical skill development, in order to <strong>address the lack of curricular emphasis on those experiencing disability, are Deaf, or are neurodiverse</strong>. 
-                    </p>
-                    <p>
-                        In the past we have hosted lunch talks with those from the aforementioned communities, and speaker panels that include interdisciplinary health care professionals, educators, patients, and families. We have also written a curriculum for the Foundations block at the University of Alberta undergraduate medical school (story of the week and Discovery Learning). 
-                    </p>
+                    <ul>
+                        <li>Sitting on the <strong>Social Accountability Council (SAC)</strong> at the University of Alberta Faculty of Medicine and Dentistry (FoMD) advocating for the disability community.</li>
+                        <li>Sitting on the <strong>Medical Students’ Association (MSA)  Equity, Diversity, and Inclusion (EDI) Committee</strong> advocating for the disability community.</li>
+                        <li>Working with the Canadian Association of Physicians with Disabilities and pre-clerkship faculty to address the lack of disability curriculum in pre-clerkship.</li>
+                        <li>Planning various events for medical students to learn from those experiencing disability.</li>
+                    </ul>
                 </div>
                 <div className="advocacy-curriculum" tabIndex={0}>
                     <div className="advocacy-curriculum-box">

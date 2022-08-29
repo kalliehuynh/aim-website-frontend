@@ -29,3 +29,14 @@
 .about-desc {
     margin-bottom: 2rem;
 }
+
+.old-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.old-logo-img {
+    width: 80%;
+}
