@@ -42,20 +42,24 @@
 
 .team-history {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
 }
 
 .team-history p {
-    width: 50%;
     min-width: 300px;
     margin: 4px;
     margin-top: 6%;
 }
 
-.team-history-img {
+.team-history-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-history-images img {
     width: 250px;
     margin: 4px;
     margin-top: 6%;
-
 }

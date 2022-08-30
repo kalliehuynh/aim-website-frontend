@@ -9,6 +9,7 @@ import Contact from "./components/pages/Contact";
 import './App.css'
 import EventInfo from "./components/pages/EventInfo";
 import { useState } from "react";
+import Banner from "./components/Banner";
 
 
 const App = () => {
@@ -16,23 +17,30 @@ const App = () => {
 
   if (viewEvent) {
     return (
-      <Router>
-        <div className="app-wrapper">
-          <Header />
-          <Nav />
-          <Routes>
-            <Route path='/' element={<About />}/>
-            <Route path='events' element={<Events />}/>
-            <Route path='learn' element={<Learn />}/>
-            <Route path='team' element={<Team />}/>
-            <Route path='contact' element={<Contact />}/>
-            <Route path='event-info' element={<EventInfo event={viewEvent}/>}/>
-          </Routes>
-        </div>
-      </Router>  
+      <div id="app">
+        <Banner />
+          <Router>
+            <div className="app-wrapper">
+              <Header />
+              <Nav />
+              <Routes>
+                <Route path='/' element={<About />}/>
+                <Route path='events' element={<Events />}/>
+                <Route path='learn' element={<Learn />}/>
+                <Route path='team' element={<Team />}/>
+                <Route path='contact' element={<Contact />}/>
+                <Route path='event-info' element={<EventInfo event={viewEvent}/>}/>
+              </Routes>
+            </div>
+          </Router> 
+      </div>
+      
+      
     )
   }
   return (
+    <div id="app">
+    <Banner />
       <Router>
         <div className="app-wrapper">
           <Header />
@@ -46,6 +54,8 @@ const App = () => {
           </Routes>
         </div>
       </Router>  
+    </div>
+      
     
     
   )

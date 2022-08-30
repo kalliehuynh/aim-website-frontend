@@ -89,7 +89,17 @@ const Team = () => {
                         started in 2020 by Surina Grover and Vienna Buchholz (c2024 medical students) at the 
                         University of Alberta’s Faculty of Medicine and Dentistry, located on Treaty 6 Territory. 
                     </p>
-                    <img src="/images/surina_grover.png" alt='Surina Grover, in front of a university building'  className="team-history-img"/>
+                    <div className="team-history-images">
+                        <div className="surina-grover team-history-img">
+                            <p>Surina Grover:</p>
+                            <img src="/images/surina_grover.png" alt='Surina Grover, in front of a university building'  className="team-history-img"/>
+                        </div>
+                        <div className="vienna-bucholz team-history-img">
+                            <p>Vienna Bucholz:</p>
+                            <img src="/images/vienna_bucholz.png" alt="Vienna Bucholz, in front of a wall of lights" />
+                        </div>
+                    </div>
+                    
                 </div>
                 
                 

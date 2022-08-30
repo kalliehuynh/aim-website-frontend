@@ -30,19 +30,8 @@ const About = () => {
                         <li>Planning various events for medical students to learn from those experiencing disability.</li>
                     </ul>
                 </div>
-                <div className="advocacy-curriculum" tabIndex={0}>
-                    <div className="advocacy-curriculum-box">
-                        <h2 className='header'>Advocacy</h2>
-                        <p>We are advocating for:</p>
-                        <ul className="advocacy-list">
-                            <li className="advocacy-list-item">A more accessible medical school application and medical school education</li>
-                            <li className="advocacy-list-item">An accessibility policy within MSA and FoMD club/initiative events</li>
-                        </ul>
-                    </div>
-                    <div className="advocacy-curriculum-box">
-                        <h2 className='header'>Curriculum</h2>
-                        <p>We are working to increase disability-affirming curriculum in the pre-clerkship medical education. </p>
-                    </div>
+                <div className='mailing-list'>
+                    <h3><a href='https://forms.gle/VNWUeGTb4SE8mus76'>Sign up to our mailing list!</a></h3>
                 </div>
             </div>
         </DocumentTitle>
