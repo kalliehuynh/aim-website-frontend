@@ -31,7 +31,7 @@ const About = () => {
                     </ul>
                 </div>
                 <div className='mailing-list'>
-                    <h3><a href='https://forms.gle/VNWUeGTb4SE8mus76'>Sign up to our mailing list!</a></h3>
+                    <h3><a href='https://forms.gle/VNWUeGTb4SE8mus76' className='signup-link'>Sign up to our mailing list!</a></h3>
                 </div>
             </div>
         </DocumentTitle>

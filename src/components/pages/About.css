@@ -49,6 +49,10 @@
     flex-wrap: wrap;
 }
 
+.signup-link {
+    text-decoration: none;
+}
+
 .mailing-list h3 {
     background-color: rgb(250, 219, 215);
     padding: 2% 4%;
